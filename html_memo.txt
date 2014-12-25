@@ -1,0 +1,16 @@
+*******
+获取要使用字体的三种文件格式，确保能在主流浏览器中都能正常显示该字体。
+
+.TTF或.OTF，适用于Firefox 3.5、Safari、Opera
+.EOT，适用于Internet Explorer 4.0+
+.SVG，适用于Chrome、IPhone
+
+@font-face {
+ font-family: 'fontNameRegular';
+ src: url('fontName.eot');
+ src: local('fontName Regular'), 
+              local('fontName'), 
+              url('fontName.woff') format('woff'), 
+              url('fontName.ttf') format('truetype'), 
+              url('fontName.svg#fontName') format('svg');
+}  
